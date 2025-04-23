@@ -1,0 +1,6 @@
+name: Crates
+version: 1.0
+author: polororr
+depend: [InfusedCommons, HolographicDisplays]
+description: Quick configurable crates made by polar for fun
+main: me.polar.crates.CratePlugin
