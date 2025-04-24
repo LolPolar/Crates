@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import me.polar.crates.CratePlugin;
 import me.polar.crates.data.Crate;
 import me.polar.crates.data.CrateReward;
+import me.polar.crates.menu.CratePreviewMenu;
 import me.polar.crates.manager.CrateManager;
 import me.polar.crates.util.RewardUtils;
 import org.bukkit.Bukkit;
@@ -74,7 +75,7 @@ public class CrateListener implements Listener {
         }
 
         if (action.contains("LEFT")) {
-            // new CratePreviewMenu(crate).open(player);
+            new CratePreviewMenu(crate).getInventory().open(player);
             return;
         }
 
